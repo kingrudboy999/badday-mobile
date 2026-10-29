@@ -55,7 +55,8 @@
               "android/proguard-rules.pro"
             ],
             "enableProguardInReleaseBuilds": false,
-            "enableShrinkResourcesInReleaseBuilds": false
+            "enableShrinkResourcesInReleaseBuilds": false,
+            "kotlinVersion": "2.2.20"
           }
         }
       ]
