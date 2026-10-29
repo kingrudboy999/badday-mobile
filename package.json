@@ -58,6 +58,5 @@
     "ios": "expo run:ios",
     "web": "expo start --web"
   },
-  "private": true,
-  "overrides": {}
+  "private": true
 }
