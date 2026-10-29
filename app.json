@@ -56,7 +56,9 @@
             },
             "extraProguardFiles": [
               "android/proguard-rules.pro"
-            ]
+            ],
+            "enableProguardInReleaseBuilds": false,
+            "enableShrinkResourcesInReleaseBuilds": false
           }
         }
       ]
