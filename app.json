@@ -16,7 +16,8 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.krdx.badday"
+      "bundleIdentifier": "com.krdx.badday",
+      "bitcode": false
     },
     "android": {
       "adaptiveIcon": {
@@ -24,7 +25,17 @@
         "backgroundColor": "#09090E"
       },
       "package": "com.krdx.badday",
-      "softwareKeyboardLayoutMode": "resize"
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.CAMERA",
+        "android.permission.INTERNET",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.WAKE_LOCK",
+        "android.permission.BLUETOOTH"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -51,6 +62,7 @@
       "eas": {
         "projectId": "e1bfe947-67b5-48c8-b2bf-2d99bb9cbfdb"
       }
-    }
+    },
+    "owner": "krdx"
   }
 }
