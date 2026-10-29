@@ -58,5 +58,8 @@
     "ios": "expo run:ios",
     "web": "expo start --web"
   },
-  "private": true
+  "private": true,
+  "overrides": {
+    "react-native-screens": "4.16.0"
+  }
 }
