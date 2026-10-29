@@ -25,11 +25,14 @@ jobs:
       - name: Expo Prebuild
         run: npx expo prebuild --platform android --clean --no-install
         env:
-          EXPO_PUBLIC_SUPABASE_URL: ${{ secrets.EXPO_PUBLIC_SUPABASE_URL }}
-          EXPO_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.EXPO_PUBLIC_SUPABASE_ANON_KEY }}
+          EXPO_PUBLIC_SUPABASE_URL: https://hkxkectxsrqdtsctngwf.supabase.co
+          EXPO_PUBLIC_SUPABASE_ANON_KEY: sb_publishable_ezDHd_dkV0IXIjCum_e_8A_JfRjEaet
 
       - name: Build APK
         run: cd android && chmod +x gradlew && ./gradlew assembleRelease
+        env:
+          EXPO_PUBLIC_SUPABASE_URL: https://hkxkectxsrqdtsctngwf.supabase.co
+          EXPO_PUBLIC_SUPABASE_ANON_KEY: sb_publishable_ezDHd_dkV0IXIjCum_e_8A_JfRjEaet
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
