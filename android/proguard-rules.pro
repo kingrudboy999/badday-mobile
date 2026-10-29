@@ -1,0 +1,1 @@
+-keep class livekit.org.jni_zero.** { *; }

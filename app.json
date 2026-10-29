@@ -53,7 +53,10 @@
             "gradleProperties": {
               "org.gradle.jvmargs": "-Xmx8g -XX:MaxMetaspaceSize=2048m",
               "android.enableDexingArtifactTransform.desugaring": "false"
-            }
+            },
+            "extraProguardFiles": [
+              "android/proguard-rules.pro"
+            ]
           }
         }
       ]
